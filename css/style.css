@@ -9,6 +9,7 @@ body{
     font-family: arial;
     background-color: #18A383;
     box-sizing: border-box;
+    margin-top:100px ;
     
 }
 form{
@@ -39,8 +40,14 @@ button{
 button:focus{
     border-color: red;
 }
+h1{
+    color: #18A383;
+    font-size: 80px;
+}
 .padre{
-    
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     align-items: center;
 }
 .p1,

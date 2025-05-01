@@ -14,7 +14,7 @@ miformulario.addEventListener('submit', async(e) => {
 
         if(imc < 18.5 ){
             img.innerHTML =(`
-                <h1>${imc} Estas por debajo de lo normal(bajo)</h1>
+                <h3>${imc} Estas por debajo de lo normal(bajo)</h3>
                 <div>
                 <img src="/img/4939257.png" alt="">
                 </div>
@@ -29,7 +29,7 @@ miformulario.addEventListener('submit', async(e) => {
             }
         else if(imc >=18.5 && imc <=24.5){
         img.innerHTML =(`
-            <h1>${imc} Estas dentro de lo normal(normal)</h1>
+            <h3>${imc} Estas dentro de lo normal(normal)</h3>
             <div>
             <img src="/img/normal.jpg" alt="">
             </div>
@@ -44,7 +44,7 @@ miformulario.addEventListener('submit', async(e) => {
 
         else if(imc >=25 && imc <=29.9){
         img.innerHTML =(`
-            <h1>${imc} Estas por arriva de lo normal(Sobre peso)</h1>
+            <h3>${imc} Estas por arriva de lo normal(Sobre peso)</h3>
             <div>
             <img src="/img/sobrePeso.png" alt="">
             </div>
@@ -57,7 +57,7 @@ miformulario.addEventListener('submit', async(e) => {
         }
         else if(imc > 30){
         img.innerHTML =(`
-            <h1>${imc} Sobre pasas lo normal(obesidad)</h1>
+            <h3>${imc} Sobre pasas lo normal(obesidad)</h3>
             <div>
             <img src="/img/obesidad.jpeg" alt="">
             </div>
