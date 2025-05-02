@@ -4,10 +4,11 @@ let img = document.querySelector('#img')
 
 
 
-miformulario.addEventListener('submit', async(e) => {
+miformulario.addEventListener('submit', (e) => {
     e.preventDefault();
     
     let data = Object.fromEntries(new FormData(e.target));
+    console.log(data)
 
     imc = data.peso/(data.altura*data.altura )
  
@@ -96,3 +97,4 @@ document.addEventListener('click', function(e){
         img.innerHTML = ''
     }
 })
+
